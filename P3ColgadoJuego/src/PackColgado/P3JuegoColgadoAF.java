@@ -39,10 +39,20 @@ public class P3JuegoColgadoAF {
 		        }
      
 		        
+		    	//PARTE3    
 		        
-		        
-		        
-		        
+		        int intentosRestantes = 6;
+		        int rondasGanadas = 0;
+
+		        // Ciclo principal del juego
+		        while (intentosRestantes > 0) {
+		            // Determinar quién le toca jugar (se alternan los jugadores)
+		            for (int turno = 0; turno < numJugadores; turno++) {
+		                System.out.println("\nEs el turno de " + jugadores[turno]);
+		                System.out.println("Palabra secreta: " + new String(palabraAdivinada));
+		                System.out.println("Intentos restantes: " + intentosRestantes);
+		            }
+		        }
 		        
 		        
 		        
