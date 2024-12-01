@@ -25,6 +25,30 @@ public class P3JuegoColgadoAF {
 		            jugadores[i] = scanner.nextLine();
 		        }
 
-	}
+		        
+			//PARTE2
+		        
+		        // Pedir la palabra secreta al admin
+		        System.out.print("--Jugador " + jugadores[0] + ", ingresa la palabra secreta: ");
+		        String palabraSecreta = scanner.nextLine();
 
+		        
+		        char[] palabraAdivinada = new char[palabraSecreta.length()];
+		        for (int i = 0; i < palabraSecreta.length(); i++) {
+		            palabraAdivinada[i] = '_';  
+		        }
+     
+		        
+		        
+		        
+		        
+		        
+		        
+		        
+		        
+		        
+		        
+		        
+		        
+	}
 }
