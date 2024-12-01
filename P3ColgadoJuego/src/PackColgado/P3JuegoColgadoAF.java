@@ -78,9 +78,37 @@ public class P3JuegoColgadoAF {
                     System.out.println("¡Correcto!");
                 }
 		        
-		        
-		        
-		        
-		        
-	}
+		        //PARTE5
+                
+                boolean palabraAdivinadaCompletamente = true;
+                for (int i = 0; i < palabraSecreta.length(); i++) {
+                    if (palabraAdivinada[i] == '_') {
+                        palabraAdivinadaCompletamente = false;
+                        break;
+                    }
+                }
+                
+                if (palabraAdivinadaCompletamente) {
+                    rondasGanadas++;
+                    System.out.println("¡Has adivinado la palabra! La palabra es: " + palabraSecreta);
+                    intentosRestantes = 0; 
+                }
+	
+                if (intentosRestantes == 0) {
+                    System.out.println("Se acabaron los intentos. La palabra era: " + palabraSecreta);
+                   
+                }
+                if (intentosRestantes == 0) {
+                }
+            
+			
+                
+                
+                
+                
+                
+                
+			
+}		
 }
+
