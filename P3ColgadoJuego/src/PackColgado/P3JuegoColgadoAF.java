@@ -54,7 +54,29 @@ public class P3JuegoColgadoAF {
 		            }
 		        }
 		        
+		        //PARTE4
 		        
+		        // Pedir la letra al jugador
+                System.out.print("Ingrese una letra: ");
+                char letra = scanner.next().charAt(0);
+                scanner.nextLine();  // Limpiar el buffer
+
+                // Comprobar si la letra está en la palabra secreta
+                int aciertos = 0;
+                for (int i = 0; i < palabraSecreta.length(); i++) {
+                    if (palabraSecreta.charAt(i) == letra && palabraAdivinada[i] == '_') {
+                        palabraAdivinada[i] = letra;
+                        aciertos++;
+                    }
+                }
+
+                // Si la letra no fue correcta, restar un intento
+                if (aciertos == 0) {
+                    intentosRestantes--;
+                    System.out.println("Letra incorrecta.");
+                } else {
+                    System.out.println("¡Correcto!");
+                }
 		        
 		        
 		        
