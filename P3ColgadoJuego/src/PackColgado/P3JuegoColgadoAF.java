@@ -18,7 +18,9 @@ public class P3JuegoColgadoAF {
 		            System.out.print("Debe haber al menos 2 jugadores. Ingrese nuevamente: ");
 		            numJugadores = scanner.nextInt();
 		        }
-				
+		        
+		        scanner.nextLine();
+
 		        String[] jugadores = new String[numJugadores];
 		        for (int i = 0; i < numJugadores; i++) {
 		            System.out.print("Ingrese el nombre del jugador " + (i + 1) + ": ");
@@ -48,11 +50,11 @@ public class P3JuegoColgadoAF {
 		        while (intentosRestantes > 0) {
 		            // Determinar quién le toca jugar (se alternan los jugadores)
 		            for (int turno = 0; turno < numJugadores; turno++) {
-		                System.out.println("\nEs el turno de " + jugadores[turno]);
+		                System.out.println("Es el turno de " + jugadores[turno]);
 		                System.out.println("Palabra secreta: " + new String(palabraAdivinada));
 		                System.out.println("Intentos restantes: " + intentosRestantes);
-		            }
-		        }
+		            
+		        
 		        
 		        //PARTE4
 		        
@@ -92,23 +94,30 @@ public class P3JuegoColgadoAF {
                     rondasGanadas++;
                     System.out.println("¡Has adivinado la palabra! La palabra es: " + palabraSecreta);
                     intentosRestantes = 0; 
+                    break;
+
                 }
 	
                 if (intentosRestantes == 0) {
                     System.out.println("Se acabaron los intentos. La palabra era: " + palabraSecreta);
-                   
+                    break;
+                }
                 }
                 if (intentosRestantes == 0) {
+                    break;
+
                 }
+			}
             
-			
-                
-                
-                
-                
-                
-                
-			
-}		
+		       
+			//PARTE6
+
+			System.out.println("El jugador que ha ganado más rondas es: " + jugadores[0]);
+	        scanner.close();
+
+
+
 }
+}
+
 
