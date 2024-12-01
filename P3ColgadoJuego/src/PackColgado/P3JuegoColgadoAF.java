@@ -7,8 +7,8 @@ public class P3JuegoColgadoAF {
 
 		
 		System.out.println("Hola");
-		System.out.println("a");
-		System.out.println("awdw");
+		System.out.println("dwdwd");
+
 
 	}
 
